@@ -1,0 +1,21 @@
+ 
+    const readLS1 = () => localStorage.getItem("firstHour");
+    const readLS2 = () => localStorage.getItem("secondHour");
+    const readLS3 = () => localStorage.getItem("thirdHour");
+    const readLS4 = () => localStorage.getItem("fourthHour");
+    const readLS5 = () => localStorage.getItem("fifthHour");
+    const readLS6 = () => localStorage.getItem("sixthHour");
+    const readLS7 = () => localStorage.getItem("seventhHour");
+    const readLS8 = () => localStorage.getItem("eighthHour");
+
+    readLS1() && setFirstHour(JSON.parse(readLS1()));
+    readLS2() && setSecondHour(JSON.parse(readLS2()));
+    readLS3() && setThirdHour(JSON.parse(readLS3()));
+    readLS4() && setFourthHour(JSON.parse(readLS4()));
+    readLS5() && setFifthHour(JSON.parse(readLS5()));
+    readLS6() && setSixthHour(JSON.parse(readLS6()));
+    readLS7() && setSeventhHour(JSON.parse(readLS7()));
+    readLS8() && setEighthHour(JSON.parse(readLS8()));
+
+    const writeLS = (newItem, newItemName) =>
+    localStorage.setItem(newItemName, JSON.stringify(newItem));

@@ -1,0 +1,98 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+table {
+  width: 90%;
+  text-align: center;
+  border-bottom: 2px solid #dfdfdf;
+  border-radius: 6px;
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+table thead tr {
+  color: #ffffff;
+  font-weight: bold;
+  background: lightblue;
+}
+table thead th {
+  padding: 5px 5px;
+  border-right: 1px solid #dfdfdf;
+  color: black;
+}
+table tr td {
+  padding: 5px 5px;
+  border-right: 1px solid #dfdfdf;
+  max-width: 10%;
+}
+table tr td:last-child {
+  border-right: 0px;
+}
+table tbody tr:nth-child(1n) {
+  background: #f6f6f6;
+}
+table tbody tr:nth-child(2n) {
+  background: #e6e6e6;
+}
+table tbody tr:hover {
+  background: #d8dbff;
+  transition-duration: 0.6s;
+}
+
+input {
+  border: 0;
+  color: rgb(68, 68, 68);
+  margin: 3px 0;
+  max-width: 100%;
+  background: none;
+  /* border: 1px solid lightgray; */
+  height: 1.5rem;
+}
+
+.hours-title {
+  color: gray;
+  font-weight: bold;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(58, 167, 201);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  max-width: 500px;
+}
+
+.navbar ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: underline;
+}
+
+.timeStamp {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px 0;
+  font-size: 11px;
+  color: gray;
+  text-align: left;
+}
